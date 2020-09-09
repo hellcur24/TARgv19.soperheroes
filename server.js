@@ -1,8 +1,11 @@
 let superheroes = require("superheroes");
 console.log(superheroes.random());
+let supervillains = require("supervillains");
+console.log(supervillains.random());
 
-superheroes.all.forEach(hero => {
-    console.log(hero);
+supervillains.all.forEach(supervillain => {
+    console.log(supervillain);
 });
+console.log("--------------");
 
-//console.log(superheroes.all);
+console.log(`${superheroes.random()} fights ${supervillains.random()}`);
